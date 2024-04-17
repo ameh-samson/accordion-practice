@@ -1,10 +1,13 @@
-import React, { useState } from "react";
-
-const Question = (props) => {
-  const { title, info } = props;
-
-  // update the UI here
-  return <h2>{props.title}</h2>;
+const Question = ({ title, info }) => {
+  return (
+    <article>
+      <header>
+        <h4>{title}</h4>
+        <button className="btn">+</button>
+      </header>
+      <p>{info}</p>
+    </article>
+  );
 };
 
 export default Question;

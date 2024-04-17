@@ -8,8 +8,8 @@ function App() {
       <div className="container">
         <h3>FAQ</h3>
         <section className="info">
-          {data.map((question) => {
-            return <SingleQuestion title={question.title} key={question.id} />;
+          {data.map(({ title, info, id }) => {
+            return <SingleQuestion title={title} info={info} key={id} />;
           })}
         </section>
       </div>
