@@ -1,6 +1,6 @@
 const Question = ({ title, info }) => {
   return (
-    <article>
+    <article className="question">
       <header>
         <h4>{title}</h4>
         <button className="btn">+</button>
